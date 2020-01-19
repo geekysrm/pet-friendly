@@ -16,10 +16,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pet-friendly`,
+        short_name: `pet-friendly`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

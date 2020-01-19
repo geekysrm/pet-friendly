@@ -1,21 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-// import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" /> */}
-    <h1>Hi pet friendly peeps!!</h1>
-    <p>In this project, we will list restaurants that are pet-friendly.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Restaurants>
+      <div>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+      <div>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+      <div>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+      <div>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+    </Restaurants>
   </Layout>
 )
+
+// Styled Components
+
+const Restaurants = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 5rem;
+`
 
 export default IndexPage
