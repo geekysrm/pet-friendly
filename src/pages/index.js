@@ -1,23 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
+import Restaurant from "../components/Restaurant"
 
 const IndexPage = () => (
   <Layout>
     <Restaurants>
       <div>
         <img src="https://picsum.photos/200" alt="" />
+        <Restaurant />
       </div>
       <div>
         <img src="https://picsum.photos/200" alt="" />
+        <Restaurant />
       </div>
       <div>
         <img src="https://picsum.photos/200" alt="" />
+        <Restaurant />
       </div>
       <div>
         <img src="https://picsum.photos/200" alt="" />
+        <Restaurant />
       </div>
     </Restaurants>
   </Layout>
