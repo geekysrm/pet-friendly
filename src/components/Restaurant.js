@@ -51,7 +51,7 @@ const ImageWrapper = styled.div`
 const RestaurantDetails = styled.div`
   h2 {
     /* margin-top: -53px; */
-    padding: 9px;
+    padding-left: 8px;
     /* color: white;
     background: rgba(0, 0, 0, 1); */
   }
