@@ -8,19 +8,15 @@ const IndexPage = () => (
   <Layout>
     <Restaurants>
       <div>
-        <img src="https://picsum.photos/200" alt="" />
         <Restaurant />
       </div>
       <div>
-        <img src="https://picsum.photos/200" alt="" />
         <Restaurant />
       </div>
       <div>
-        <img src="https://picsum.photos/200" alt="" />
         <Restaurant />
       </div>
       <div>
-        <img src="https://picsum.photos/200" alt="" />
         <Restaurant />
       </div>
     </Restaurants>
