@@ -22,6 +22,7 @@ const Restaurant = ({ name, image, address, timing, cost, cuisine }) => (
 const RestaurantWrapper = styled.div`
   border: 1px solid black;
   border-radius: 5px;
+  position: relative;
 `
 
 const ImageWrapper = styled.div`
@@ -29,6 +30,16 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
 
+  /* &:after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  } */
   img {
     height: 200px;
     width: 100%;
@@ -39,7 +50,10 @@ const ImageWrapper = styled.div`
 
 const RestaurantDetails = styled.div`
   h2 {
+    /* margin-top: -53px; */
     padding: 9px;
+    /* color: white;
+    background: rgba(0, 0, 0, 1); */
   }
 `
 
