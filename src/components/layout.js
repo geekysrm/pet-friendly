@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "normalize.css"
+import styled, { createGlobalStyle } from "styled-components"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -48,5 +50,29 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+// Styled components
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    --purple: #b066ff;
+    --blue: #203447;
+    --lightblue: #1f4662;
+    --blue2: #1C2F40;
+    --yellow: #ffc600;
+    --pink: #EB4471;
+    --vape: #d7d7d7;
+    /* background: var(--blue); */
+    /* color: var(--vape); */
+    font-family: 'sans-serif';
+    font-weight: 100;
+    font-size: 10px;
+  }
+  body {
+    font-size: 2rem;
+    overflow-y: scroll;
+  }
+
+`
 
 export default Layout
