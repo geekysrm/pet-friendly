@@ -56,7 +56,7 @@ Layout.propTypes = {
 // Styled components
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
   html {
     --purple: #b066ff;
     --blue: #203447;
@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     --vape: #d7d7d7;
     /* background: var(--blue); */
     /* color: var(--vape); */
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 10px;
   }

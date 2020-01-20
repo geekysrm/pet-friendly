@@ -10,10 +10,10 @@ const Restaurant = ({ name, image, address, timing, cost, cuisine }) => (
     </ImageWrapper>
     <RestaurantDetails>
       <h2>{name}</h2>
-      <div>{address}</div>
-      <div>{timing}</div>
-      <div>{cost}</div>
-      <div>{cuisine}</div>
+      <div className="address">{address}</div>
+      <div className="timing">{timing}</div>
+      <div className="cost">{cost}</div>
+      <div className="cuisine">{cuisine}</div>
     </RestaurantDetails>
   </RestaurantWrapper>
 )
@@ -37,6 +37,10 @@ const ImageWrapper = styled.div`
   }
 `
 
-const RestaurantDetails = styled.div``
+const RestaurantDetails = styled.div`
+  h2 {
+    padding: 9px;
+  }
+`
 
 export default Restaurant
