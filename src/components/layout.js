@@ -13,6 +13,8 @@ import Header from "./header"
 import "normalize.css"
 import styled, { createGlobalStyle } from "styled-components"
 
+// Add Header
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
           margin: `0 auto`,
@@ -54,6 +56,7 @@ Layout.propTypes = {
 // Styled components
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
   html {
     --purple: #b066ff;
     --blue: #203447;
@@ -64,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     --vape: #d7d7d7;
     /* background: var(--blue); */
     /* color: var(--vape); */
-    font-family: 'sans-serif';
+    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 10px;
   }

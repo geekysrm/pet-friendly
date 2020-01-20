@@ -22,7 +22,6 @@ const Restaurant = () => (
 // Styled Components
 const RestaurantWrapper = styled.div`
   border: 1px solid black;
-  /* background: linear-gradient(135deg, #ce9ffc 0%, #7367f0 100%); */
 `
 
 const ImageWrapper = styled.div`
@@ -33,7 +32,7 @@ const ImageWrapper = styled.div`
   img {
     height: 200px;
     width: 400px;
-    /* text-align: center; */
+    max-width: 100%;
     object-fit: cover;
   }
 `
