@@ -7,18 +7,10 @@ import Restaurant from "../components/Restaurant"
 const IndexPage = () => (
   <Layout>
     <Restaurants>
-      <div>
-        <Restaurant />
-      </div>
-      <div>
-        <Restaurant />
-      </div>
-      <div>
-        <Restaurant />
-      </div>
-      <div>
-        <Restaurant />
-      </div>
+      <Restaurant />
+      <Restaurant />
+      <Restaurant />
+      <Restaurant />
     </Restaurants>
   </Layout>
 )
