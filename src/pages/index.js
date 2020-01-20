@@ -7,10 +7,38 @@ import Restaurant from "../components/Restaurant"
 const IndexPage = () => (
   <Layout>
     <Restaurants>
-      <Restaurant />
-      <Restaurant />
-      <Restaurant />
-      <Restaurant />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+      />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+      />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+      />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+      />
     </Restaurants>
   </Layout>
 )
@@ -19,7 +47,7 @@ const IndexPage = () => (
 
 const Restaurants = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 400px 400px;
   grid-gap: 5rem;
 `
 

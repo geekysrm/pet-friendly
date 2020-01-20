@@ -3,20 +3,17 @@ import styled from "styled-components"
 
 // TODO: Convert to use gatsby-image
 
-const Restaurant = () => (
+const Restaurant = ({ name, image, address, timing, cost, cuisine }) => (
   <RestaurantWrapper>
     <ImageWrapper>
-      <img
-        src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
-        alt="restaurant"
-      />
+      <img src={image} alt="restaurant" />
     </ImageWrapper>
     <RestaurantDetails>
-      <h2>Domino's Pizza</h2>
-      <div>PTT, High Grounds, Vasanth Nagar</div>
-      <div>10 am - 10pm</div>
-      <div>Rs. 200 for 2</div>
-      <div>North Indian, Chinese, South Indian</div>
+      <h2>{name}</h2>
+      <div>{address}</div>
+      <div>{timing}</div>
+      <div>{cost}</div>
+      <div>{cuisine}</div>
     </RestaurantDetails>
   </RestaurantWrapper>
 )
