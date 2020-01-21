@@ -26,20 +26,8 @@ const RestaurantWrapper = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  /* padding: 5px; */
   display: flex;
   justify-content: center;
-
-  /* &:after {
-    content: "\A";
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 1;
-  } */
   img {
     height: 200px;
     width: 100%;
@@ -50,10 +38,7 @@ const ImageWrapper = styled.div`
 
 const RestaurantDetails = styled.div`
   h2 {
-    /* margin-top: -53px; */
     padding-left: 8px;
-    /* color: white;
-    background: rgba(0, 0, 0, 1); */
   }
 `
 
