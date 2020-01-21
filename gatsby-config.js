@@ -15,10 +15,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-styled-components`,
+    //   options: {
+    //     // Add any options here
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-plugin-emotion`,
       options: {
-        // Add any options here
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
       },
     },
     {

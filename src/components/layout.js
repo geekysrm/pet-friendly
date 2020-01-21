@@ -10,8 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "normalize.css"
-import styled, { createGlobalStyle } from "styled-components"
+// import "normalize.css"
+// import styled, { createGlobalStyle } from "styled-components"
+// import styled from "@emotion/styled"
+import { Global, css } from "@emotion/core"
 
 // Add Header
 
@@ -28,7 +30,29 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <GlobalStyle />
+      <Global
+        styles={css`
+          @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+          html {
+            --purple: #b066ff;
+            --blue: #203447;
+            --lightblue: #1f4662;
+            --blue2: #1c2f40;
+            --yellow: #ffc600;
+            --pink: #eb4471;
+            --vape: #d7d7d7;
+            /* background: var(--blue); */
+            /* color: var(--vape); */
+            font-family: "Open Sans", sans-serif;
+            font-weight: 100;
+            font-size: 10px;
+          }
+          body {
+            font-size: 2rem;
+            overflow-y: scroll;
+          }
+        `}
+      />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
@@ -53,29 +77,28 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-// Styled components
+// // Styled components
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-  html {
-    --purple: #b066ff;
-    --blue: #203447;
-    --lightblue: #1f4662;
-    --blue2: #1C2F40;
-    --yellow: #ffc600;
-    --pink: #EB4471;
-    --vape: #d7d7d7;
-    /* background: var(--blue); */
-    /* color: var(--vape); */
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 10px;
-  }
-  body {
-    font-size: 2rem;
-    overflow-y: scroll;
-  }
-
-`
+// const GlobalStyle = styled.Global`
+//   @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+//   html {
+//     --purple: #b066ff;
+//     --blue: #203447;
+//     --lightblue: #1f4662;
+//     --blue2: #1c2f40;
+//     --yellow: #ffc600;
+//     --pink: #eb4471;
+//     --vape: #d7d7d7;
+//     /* background: var(--blue); */
+//     /* color: var(--vape); */
+//     font-family: "Open Sans", sans-serif;
+//     font-weight: 100;
+//     font-size: 10px;
+//   }
+//   body {
+//     font-size: 2rem;
+//     overflow-y: scroll;
+//   }
+// `
 
 export default Layout

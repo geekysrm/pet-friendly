@@ -1,5 +1,7 @@
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
+import styled from "@emotion/styled"
+import tw from "tailwind.macro"
 
 // TODO: Convert to use gatsby-image
 
@@ -15,6 +17,7 @@ const Restaurant = ({ name, image, address, timing, cost, cuisine }) => (
       <div className="cost">{cost}</div>
       <div className="cuisine">{cuisine}</div>
     </RestaurantDetails>
+    {/* <Button>Submit</Button> */}
   </RestaurantWrapper>
 )
 
@@ -35,6 +38,10 @@ const ImageWrapper = styled.div`
     object-fit: cover;
   }
 `
+
+// const Button = tw.button`
+//    bg-blue-700 text-white p-2 rounded
+// `
 
 const RestaurantDetails = styled.div`
   h2 {
