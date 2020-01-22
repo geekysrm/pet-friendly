@@ -14,6 +14,7 @@ import Header from "./header"
 // import styled, { createGlobalStyle } from "styled-components"
 // import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
+import tw from "tailwind.macro"
 
 // Add Header
 
@@ -32,24 +33,10 @@ const Layout = ({ children }) => {
     <>
       <Global
         styles={css`
-          @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
           html {
-            --purple: #b066ff;
-            --blue: #203447;
-            --lightblue: #1f4662;
-            --blue2: #1c2f40;
-            --yellow: #ffc600;
-            --pink: #eb4471;
-            --vape: #d7d7d7;
-            /* background: var(--blue); */
-            /* color: var(--vape); */
-            font-family: "Open Sans", sans-serif;
-            font-weight: 100;
-            font-size: 10px;
-          }
-          body {
-            font-size: 2rem;
-            overflow-y: scroll;
+            -webkit-font-smoothing: antialiased;
+            background-color: lightgray;
+            color: #1a202c;
           }
         `}
       />
@@ -63,11 +50,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
     </>
   )
