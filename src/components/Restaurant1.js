@@ -3,6 +3,8 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import tw from "tailwind.macro"
 
+import MdStar from "react-ionicons/lib/MdStar"
+
 const Restaurant = ({
   name,
   image,
@@ -14,58 +16,28 @@ const Restaurant = ({
 }) => (
   <RestaurantWrapper>
     <img src={image} alt={name} />
-    <div
-      css={css`
-        ${tw`p-6`}
-      `}
-    >
-      <h4
-        css={css`
-          ${tw`font-semibold text-lg truncate`}
-        `}
-      >
-        {name}
-      </h4>
-      <div
-        css={css`
-          ${tw`text-gray-600 text-sm`}
-        `}
-      >
-        {address}
+    <div css={tw`p-6`}>
+      <h4 css={tw`font-semibold text-lg leading-tight truncate`}>{name}</h4>
+      <div css={tw`text-gray-600 text-sm`}>{address}</div>
+      <div css={tw``}>
+        {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
       </div>
-      <div
-        css={css`
-          ${tw``}
-        `}
-      >
-        {cost}{" "}
-        <span
-          css={css`
-            ${tw`text-gray-600 text-sm`}
-          `}
-        >
-          / 2
-        </span>
-      </div>
-      <div
-        css={css`
-          ${tw`mt-4 text-teal-600 font-semibold`}
-        `}
-      >
-        {rating}/5 stars
+      <div css={tw`mt-4`}>
+        <MdStar css={tw`fill-current text-red-500`} />
+        <span css={tw`text-teal-600 font-semibold`}>{rating}/5 stars</span>
+        <button css={tw`bg-black text-red-500`}>Hello click</button>
       </div>
     </div>
   </RestaurantWrapper>
 )
 
-// Styled Components:
-const RestaurantWrapper = styled.div`
-  ${tw`
-  bg-white
+// Styled components
+
+const RestaurantWrapper = tw.div`
+  bg-red-500
   rounded-lg
   overflow-hidden
   border
-`}
 `
 
 export default Restaurant
