@@ -34,7 +34,7 @@ const Restaurant = ({
 // Styled components
 
 const RestaurantWrapper = tw.div`
-  bg-red-500
+  bg-white
   rounded-lg
   overflow-hidden
   border
