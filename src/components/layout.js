@@ -16,7 +16,7 @@ import Header from "./header"
 import { Global, css } from "@emotion/core"
 import tw from "tailwind.macro"
 
-// Add Header
+// TODO: Add Header
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

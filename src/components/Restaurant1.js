@@ -22,17 +22,16 @@ const Restaurant = ({
       <div css={tw``}>
         {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
       </div>
-      <div css={tw`flex mt-4`}>
+      <div css={tw`flex justify-end mt-2`}>
         {Array.apply(null, { length: 5 }).map((e, i) => {
           const filled = i < rating
           let style
           console.log(filled)
           if (filled) {
             style = tw`h-5 w-5 fill-current text-teal-500`
-          } else style = tw`h-5 w-5 fill-current text-gray-300`
+          } else style = tw`h-5 w-5 fill-current text-gray-400`
           return <MdStar key={i} css={style} />
         })}
-        {/* <span css={tw`text-teal-600 font-semibold`}>{rating}/5 stars</span> */}
       </div>
     </div>
   </RestaurantWrapper>
