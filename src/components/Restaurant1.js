@@ -23,9 +23,8 @@ const Restaurant = ({
         {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
       </div>
       <div css={tw`mt-4`}>
-        <MdStar css={tw`fill-current text-red-500`} />
+        <MdStar css={tw`fill-current text-teal-500`} />
         <span css={tw`text-teal-600 font-semibold`}>{rating}/5 stars</span>
-        <button css={tw`bg-black text-red-500`}>Hello click</button>
       </div>
     </div>
   </RestaurantWrapper>
