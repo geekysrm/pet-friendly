@@ -1,9 +1,9 @@
 import React from "react"
-import styled from "@emotion/styled"
-import { css } from "@emotion/core"
 import tw from "tailwind.macro"
 
 import MdStar from "react-ionicons/lib/MdStar"
+
+// TODO: Add star for half ratings
 
 const Restaurant = ({
   name,
@@ -22,9 +22,17 @@ const Restaurant = ({
       <div css={tw``}>
         {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
       </div>
-      <div css={tw`mt-4`}>
-        <MdStar css={tw`fill-current text-teal-500`} />
-        <span css={tw`text-teal-600 font-semibold`}>{rating}/5 stars</span>
+      <div css={tw`flex mt-4`}>
+        {Array.apply(null, { length: 5 }).map((e, i) => {
+          const filled = i < rating
+          let style
+          console.log(filled)
+          if (filled) {
+            style = tw`h-5 w-5 fill-current text-teal-500`
+          } else style = tw`h-5 w-5 fill-current text-gray-300`
+          return <MdStar key={i} css={style} />
+        })}
+        {/* <span css={tw`text-teal-600 font-semibold`}>{rating}/5 stars</span> */}
       </div>
     </div>
   </RestaurantWrapper>
