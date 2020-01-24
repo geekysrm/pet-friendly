@@ -1,51 +1,60 @@
 import React from "react"
-import styled from "@emotion/styled"
 import tw from "tailwind.macro"
 
-// TODO: Convert to use gatsby-image
+import MdStar from "react-ionicons/lib/MdStar"
+import MdPin from "react-ionicons/lib/MdPin"
 
-const Restaurant = ({ name, image, address, timing, cost, cuisine }) => (
+// TODO: Add star for half ratings
+
+const Restaurant = ({
+  name,
+  image,
+  address,
+  timing,
+  cost,
+  cuisine,
+  rating,
+}) => (
   <RestaurantWrapper>
-    <ImageWrapper>
-      <img src={image} alt="restaurant" />
-    </ImageWrapper>
-    <RestaurantDetails>
-      <h2>{name}</h2>
-      <div className="address">{address}</div>
-      <div className="timing">{timing}</div>
-      <div className="cost">{cost}</div>
-      <div className="cuisine">{cuisine}</div>
-    </RestaurantDetails>
-    {/* <Button>Submit</Button> */}
+    <img src={image} alt={name} />
+    <div css={tw`p-6`}>
+      <h4 css={tw`font-semibold text-lg leading-snug truncate`}>{name}</h4>
+      <div css={tw`text-gray-600 text-sm`}>
+        <div css={tw`flex`}>
+          <MdPin css={tw`-ml-1 h-5 w-5 fill-current text-gray-600`} />
+          {address}
+        </div>
+      </div>
+      <div css={tw``}>
+        {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
+      </div>
+      <div css={tw`flex items-end justify-between`}>
+        <div css={tw`w-7/12 text-gray-400 font-semibold truncate`}>
+          {cuisine}
+        </div>
+        <div css={tw`flex mt-2`}>
+          {Array.apply(null, { length: 5 }).map((e, i) => {
+            const filled = i < rating
+            let style
+            console.log(filled)
+            if (filled) {
+              style = tw`h-5 w-5 fill-current text-teal-500`
+            } else style = tw`h-5 w-5 fill-current text-gray-400`
+            return <MdStar key={i} css={style} />
+          })}
+        </div>
+      </div>
+    </div>
   </RestaurantWrapper>
 )
 
-// Styled Components
-const RestaurantWrapper = styled.div`
-  border: 1px solid black;
-  border-radius: 5px;
-  position: relative;
-`
+// Styled components
 
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  img {
-    height: 200px;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-  }
-`
-
-// const Button = tw.button`
-//    bg-blue-700 text-white p-2 rounded
-// `
-
-const RestaurantDetails = styled.div`
-  h2 {
-    padding-left: 8px;
-  }
+const RestaurantWrapper = tw.div`
+  bg-white
+  rounded-lg
+  overflow-hidden
+  border
 `
 
 export default Restaurant

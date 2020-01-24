@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
-import Restaurant from "../components/Restaurant1"
+import Restaurant from "../components/Restaurant"
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const IndexPage = () => (
         address="PTT, High Grounds, Bengaluru"
         timing="10 am - 10 pm"
         cost="Rs. 200"
-        cuisine="North Indian, South Indian, North Indian, South Indian"
+        cuisine="North Indian, South Indian"
         rating="4"
       />
     </Restaurants>
