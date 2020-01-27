@@ -16,6 +16,24 @@ const IndexPage = () => (
         cuisine="North Indian, South Indian"
         rating="4"
       />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+        rating="4"
+      />
+      <Restaurant
+        name="Domino's Pizza"
+        image="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+        address="PTT, High Grounds, Bengaluru"
+        timing="10 am - 10 pm"
+        cost="Rs. 200"
+        cuisine="North Indian, South Indian"
+        rating="4"
+      />
     </Restaurants>
   </Layout>
 )
