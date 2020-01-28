@@ -5,6 +5,9 @@ import axios from "axios"
 import Layout from "../components/layout"
 import Restaurant from "../components/Restaurant"
 
+// TODO: Add stars/rating from API
+// TODO: Add pagination after some no. of restaurants
+
 const IndexPage = () => {
   const [restaurants, setRestaurants] = useState([])
 
@@ -23,6 +26,7 @@ const IndexPage = () => {
     }
     fetchData("bangalore")
   }, [])
+
   return (
     <Layout>
       <Restaurants>

@@ -3,7 +3,6 @@ import tw from "tailwind.macro"
 import styled from "@emotion/styled"
 
 import MdStar from "react-ionicons/lib/MdStar"
-import MdPin from "react-ionicons/lib/MdPin"
 
 // TODO: Add star for half ratings, add timing data
 
@@ -20,12 +19,14 @@ const Restaurant = ({
     <img css={tw`w-full max-h-full`} src={image} alt={name} />
     <div css={tw`p-6`}>
       <h4 css={tw`font-semibold text-lg leading-snug truncate`}>{name}</h4>
-      <div css={tw`text-gray-600 text-sm`}>
-        <div css={tw`flex`}>
-          {/* <MdPin css={tw`-ml-1 h-5 w-5 fill-current text-gray-600`} /> */}
-          {address}
-        </div>
-      </div>
+      <a
+        href={`https://www.google.com/maps/search/${name} ${address}?hl=en&source=opensearch`}
+        target="_blank"
+        rel="noopener noreferrer"
+        css={tw`text-gray-600 text-sm truncate`}
+      >
+        {address}
+      </a>
       <div css={tw``}>
         {cost} <span css={tw`text-gray-600 text-sm`}>/ 2</span>
       </div>
@@ -63,7 +64,7 @@ const RestaurantWrapper = styled.div`
   overflow-hidden
   border`}
   img {
-    max-height: 265px;
+    height: 265px;
     object-fit: cover;
     object-position: center;
   }
