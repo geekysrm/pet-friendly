@@ -5,6 +5,8 @@ import axios from "axios"
 import Layout from "../components/layout"
 import Restaurant from "../components/Restaurant"
 
+import restaurants1 from "../tempData/bangalore"
+
 // TODO: Add stars/rating from API
 // TODO: Add pagination after some no. of restaurants
 
@@ -30,7 +32,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Restaurants>
-        {restaurants.map((restaurant, id) => (
+        {restaurants1.map((restaurant, id) => (
           <Restaurant
             key={id}
             name={restaurant.name}
