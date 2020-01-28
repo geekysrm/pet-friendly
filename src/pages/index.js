@@ -1,42 +1,47 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styled from "@emotion/styled"
+import axios from "axios"
 
 import Layout from "../components/layout"
 import Restaurant from "../components/Restaurant"
 
-const IndexPage = () => (
-  <Layout>
-    <Restaurants>
-      <Restaurant
-        name="Domino's Pizza"
-        image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
-        address="PTT, High Grounds, Bengaluru"
-        timing="10 am - 10 pm"
-        cost="Rs. 200"
-        cuisine="North Indian, South Indian"
-        rating="4"
-      />
-      <Restaurant
-        name="Domino's Pizza"
-        image="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-        address="PTT, High Grounds, Bengaluru"
-        timing="10 am - 10 pm"
-        cost="Rs. 200"
-        cuisine="North Indian, South Indian"
-        rating="4"
-      />
-      <Restaurant
-        name="Domino's Pizza"
-        image="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-        address="PTT, High Grounds, Bengaluru"
-        timing="10 am - 10 pm"
-        cost="Rs. 200"
-        cuisine="North Indian, South Indian"
-        rating="4"
-      />
-    </Restaurants>
-  </Layout>
-)
+const IndexPage = () => {
+  const [restaurants, setRestaurants] = useState([])
+
+  useEffect(() => {
+    const fetchData = async city => {
+      try {
+        const result = await axios(
+          `${process.env.GATSBY_API_URL}/restaurants/${city}`
+        )
+        // setData(result.data);
+        console.log(result.data.restaurants)
+        setRestaurants(result.data.restaurants)
+      } catch (e) {
+        console.error("Error in getRestaurants", e)
+      }
+    }
+    fetchData("bangalore")
+  }, [])
+  return (
+    <Layout>
+      <Restaurants>
+        {restaurants.map((restaurant, id) => (
+          <Restaurant
+            key={id}
+            name={restaurant.name}
+            image={restaurant.image}
+            address={restaurant.address}
+            timing={restaurant.timing}
+            cost={restaurant.cost}
+            cuisine={restaurant.cuisine}
+            rating="4"
+          />
+        ))}
+      </Restaurants>
+    </Layout>
+  )
+}
 
 // Styled Components
 
