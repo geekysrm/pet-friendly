@@ -3,7 +3,6 @@ import tw from "tailwind.macro"
 import styled from "@emotion/styled"
 
 import MdStar from "react-ionicons/lib/MdStar"
-import MdOpen from "react-ionicons/lib/MdOpen"
 
 // TODO: Add star for half ratings, add timing data
 
@@ -66,6 +65,7 @@ const RestaurantWrapper = styled.div`
   rounded-lg
   overflow-hidden
   border`}
+  height: 409px;
   img {
     height: 265px;
     object-fit: cover;
