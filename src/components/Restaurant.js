@@ -22,7 +22,7 @@ const Restaurant = ({
       <h4 css={tw`font-semibold text-lg leading-snug truncate`}>{name}</h4>
       <div css={tw`text-gray-600 text-sm`}>
         <div css={tw`flex`}>
-          <MdPin css={tw`-ml-1 h-5 w-5 fill-current text-gray-600`} />
+          {/* <MdPin css={tw`-ml-1 h-5 w-5 fill-current text-gray-600`} /> */}
           {address}
         </div>
       </div>
@@ -37,7 +37,6 @@ const Restaurant = ({
           {Array.apply(null, { length: 5 }).map((e, i) => {
             const filled = i < rating
             let style
-            console.log(filled)
             if (filled) {
               style = tw`h-5 w-5 fill-current text-teal-500`
             } else style = tw`h-5 w-5 fill-current text-gray-400`
