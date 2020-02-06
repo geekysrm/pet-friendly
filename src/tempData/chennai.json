@@ -1,0 +1,130 @@
+[
+  {
+    "name": "The Farm",
+    "address": "1/277, OMR, Semmancheri Village, Semmancheri, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/9/66989/eb020ce2f881292152e5edfd4188be87_featured_v2.jpg",
+    "cuisine": "Steak, Pizza, North Indian, Juices",
+    "cost": "₹1,500",
+    "timing": "7:30am – 6pm (Mon-Sun)"
+  },
+  {
+    "name": "Santé Spa Cuisine",
+    "address": "4, Rutland Gate, 2nd Street, Nungambakkam, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/9/19000279/236aa2786eb6f3b8622468f039b20d4a_featured_v2.jpg",
+    "cuisine": "Italian, Continental, Healthy Food, Mediterranean, Fast Food",
+    "cost": "₹1,300",
+    "timing": "11am – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "The Summer House Eatery",
+    "address": "5B, Ramachandra Avenue, Seethammal Colony, Alwarpet, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/2/18628072/99651d7201377e17c7fb492a1a72a1af_featured_v2.jpg",
+    "cuisine": "Korean, Thai, Japanese, Beverages, Italian, Continental, French",
+    "cost": "₹800",
+    "timing": "8am – 9:30pm (Mon-Sun)"
+  },
+  {
+    "name": "The Bark",
+    "address": "40, Maharaja Surya Rao Road, Dutch Village, Alwarpet, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/7/18720717/1ca406d049b2f23de7c4f51471fd42f4_featured_v2.jpg",
+    "cuisine": "Cafe, Mexican, Italian, Continental",
+    "cost": "₹800",
+    "timing": "12noon – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "Soul Garden Bistro",
+    "address": "86/59, New Avadi Road, Kilpauk, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/0/18369290/39e187624cab0aff72dec4a63eb4c40c_featured_v2.jpg",
+    "cuisine": "Continental, Mexican, Italian, Pizza, Sandwich, Burger",
+    "cost": "₹800",
+    "timing": "11am – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "This Way In",
+    "address": "9/5, Dheenadayalu Street, T. Nagar, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/7/18969627/71d0afb1dcf7869f45bab723420c116c_featured_v2.jpg",
+    "cuisine": "Cafe",
+    "cost": "₹600",
+    "timing": "12noon – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "Wild Garden Cafe - Amethyst",
+    "address": "Whites Road, Royapettah, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/9/66419/6c063dd1dfc07933566424d694fcd71f_featured_v2.jpg",
+    "cuisine": "Cafe, Italian, Continental",
+    "cost": "₹1,400",
+    "timing": "10am – 11:30pm (Mon-Sun)"
+  },
+  {
+    "name": "Chamiers Cafe",
+    "address": "106, Chamiers Road, Opposite Crowne Plaza, RA Puram, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/5/66565/8884d8d1763b5448cbf63fac8aa03a1d_featured_v2.jpg",
+    "cuisine": "Cafe, Italian, Continental, Salad, Juices",
+    "cost": "₹1,000",
+    "timing": "9am – 11:30pm (Mon-Sun)"
+  },
+  {
+    "name": "Drizzle By The Beach",
+    "address": "69, 3rd Main Road, VGP Layout, Palavakkam, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/7/18598737/8a48f9ca79766dddc0078dd12ceb28ca_featured_v2.jpg",
+    "cuisine": "Continental, Italian, North Indian",
+    "cost": "₹1,000",
+    "timing": "11am – 11pm (Mon-Thu),11am – 12:30am (Fri-Sun)"
+  },
+  {
+    "name": "Shiraz Art Cafe @ Tryst",
+    "address": "359,ECR, NEELANKARAI , Chennai 600115",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/5/70065/5cf804538443d3e810ef49d1ab4f5b62_featured_v2.jpeg",
+    "cuisine": "Continental, Parsi, Biryani, Iranian",
+    "cost": "₹1,100",
+    "timing": "Closed (Mon),12noon – 3pm, 6pm – 11pm (Tue-Sun)"
+  },
+  {
+    "name": "Atte - Glocal Cafe",
+    "address": "53/17, Besant Nagar, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/6/18600216/0a817b3cbcc8059caa9cbeed87d2c127_featured_v2.jpg",
+    "cuisine": "Cafe, Beverages, Fast Food",
+    "cost": "₹400",
+    "timing": "12noon – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "PH Cafe - Psychedelic Hues",
+    "address": "57, Gandhi Irwin Road, Near Marina Inn, Egmore, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/2/19200122/c9d564e4662927890fa7bc4dbd8bab8c_featured_v2.jpg",
+    "cuisine": "Cafe, Salad, Italian, Continental",
+    "cost": "₹600",
+    "timing": "11am – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "Kalo's",
+    "address": "Shop 8, Thiruvalluvar Nagar, Besant Nagar, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/5/18554935/dc8968cb297cb2ac524a6676dd474b78_featured_v2.jpg",
+    "cuisine": "Continental, Italian",
+    "cost": "₹500",
+    "timing": "2pm – 2am (Mon-Fri),11am – 2am (Sat-Sun)"
+  },
+  {
+    "name": "Craveyard Cafe",
+    "address": "9, 11th Cross Street, Indira Nagar, Adyar, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/9/71129/7e07b5df194be10699133ba8f30803d7_featured_v2.jpg",
+    "cuisine": "Cafe, Fast Food, Beverages",
+    "cost": "₹650",
+    "timing": "11am – 10pm (Mon-Sun)"
+  },
+  {
+    "name": "Antari",
+    "address": "86/59 Ground Floor, New Avadi Road, Kilpauk, Chennai",
+    "image": "https://b.zmtcdn.com/data/pictures/1/18611141/9ef11ab744914f193eb63ac3deb1aaf2_featured_v2.jpg",
+    "cuisine": "Cafe, Coffee, Tea",
+    "cost": "₹300",
+    "timing": "11am – 11pm (Mon-Sun)"
+  },
+  {
+    "name": "Rock Pepper Fritters",
+    "address": "32, NRI Colony, VGP Layout, Paniyur, Akkarai, Chennai",
+    "image": "https://b.zmtcdn.com/images/placeholder_200.png",
+    "cuisine": "Beverages, Fast Food",
+    "cost": "₹500",
+    "timing": "Closed (Mon),12noon – 10pm (Tue-Sun)"
+  }
+]
